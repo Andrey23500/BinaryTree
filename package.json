@@ -7,7 +7,8 @@
     "eslint": "eslint \"./src/**/*.ts\"",
     "build": "npm run eslint && rimraf ./dist && gulp --gulpfile  gulpfile.cjs",
     "start": "browser-sync start --server \"dist\" --files \"dist\"",
-    "buildAndStart": "npm run build && npm run start"
+    "buildAndStart": "npm run build && npm run start",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "@types/node": "^16.11.10",
