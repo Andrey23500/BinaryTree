@@ -46,6 +46,7 @@ header {
   color: var(--text-lighter);
   margin-bottom: 0.5rem;
   background: linear-gradient(90deg, #4cc9f0, #4361ee);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -175,6 +176,7 @@ header {
   margin-bottom: 0;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .container {
     padding: 15px;
