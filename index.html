@@ -5,32 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Binary Tree</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="title">Binary Tree</h1>
-      <div class="inputs">
-        <div class="input-box">
-          <input id="tree-input" class="input" placeholder="Add node key" />
-          <button id="add-to-tree">Add</button>
-        </div>
-        <div class="input-box">
-          <input
-            id="tree-delete"
-            class="input"
-            placeholder="Delete node by key"
-          />
-          <button id="delete-to-tree">Delete</button>
-        </div>
-        <div class="input-box">
-          <input id="tree-find" class="input" placeholder="Find node by key" />
-          <button id="find-to-tree">Find</button>
+      <header>
+        <h1 class="title">Binary Tree</h1>
+      </header>
+
+      <div class="controls">
+        <div class="control-group">
+          <div class="input-box">
+            <input id="tree-input" class="input" type="number" placeholder="Enter node key" />
+            <button id="add-to-tree" class="btn btn-primary">Add Node</button>
+          </div>
+          <div class="input-box">
+            <input id="tree-delete" class="input" type="number" placeholder="Enter node key" />
+            <button id="delete-to-tree" class="btn btn-danger">Delete Node</button>
+          </div>
+          <div class="input-box">
+            <input id="tree-find" class="input" type="number" placeholder="Enter node key" />
+            <button id="find-to-tree" class="btn btn-secondary">Find Node</button>
+          </div>
         </div>
       </div>
 
-      <div class="info" id="info"></div>
-      <canvas id="drawing"> </canvas>
+      <div class="info-box" id="info"></div>
+      <div class="canvas-container">
+        <canvas id="drawing"></canvas>
+      </div>
     </div>
     <script type="module" src="./index.js"></script>
   </body>
