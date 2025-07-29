@@ -24,4 +24,4 @@ In a binary tree,  every node in a tree should have a maximum of two children.
 ---
 
 **Deploy**:
-https://andrey23500.github.io/BinaryTree/
+https://Twixovi4.github.io/BinaryTree/
